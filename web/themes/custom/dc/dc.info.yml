@@ -1,0 +1,20 @@
+name: dc
+type: theme
+base theme: stable9
+description: Theme for Drupal Challange.
+package: Custom
+core_version_requirement: ^9 || ^10
+libraries:
+  - dc/global
+regions:
+  header: 'Header'
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  featured: 'Featured'
+  breadcrumb: 'Breadcrumb'
+  content: 'Content'
+  sidebar_first: 'Sidebar first'
+  sidebar_second: 'Sidebar second'
+  footer: 'Footer'

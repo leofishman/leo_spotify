@@ -1,0 +1,39 @@
+{
+  "name": "dc",
+  "private": true,
+  "scripts": {
+    "livereload": "livereload css"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.27.10",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect-php": "^1.0.3",
+    "gulp-sass": "^5.1.0",
+    "gulp-sass-bulk-import": "^1.0.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "livereload": "^0.9.3",
+    "sass": "^1.56.1"
+  },
+  "version": "1.0.0",
+  "description": "DC theme with SCSS.",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "browserslist": [
+    "> 1%",
+    "ie >= 8",
+    "edge >= 15",
+    "ie_mob >= 10",
+    "ff >= 45",
+    "chrome >= 45",
+    "safari >= 7",
+    "ios >= 7",
+    "android >= 4",
+    "Opera >= 23"
+  ],
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  }
+}

@@ -1,0 +1,36 @@
+$media: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  2xl: 1536px,
+  3xl: 1920px,
+);
+
+@mixin respond-to($breakpoint) {
+  @each $breakpoints, $size in $media {
+    @if $breakpoint==$breakpoints {
+      @media screen and (max-width: $size) {
+        @content;
+      }
+    }
+  }
+}
+
+// Usage samples */
+
+//  body {
+  // SCSS for Wide screen
+    
+  // @include respond-to(xl) {
+      // responsive code for desktop viewport 1280px
+  // }
+
+  // @include respond-to(lg) {
+      // responsive code for tablet viewport 1024px
+  // }
+
+  // @include respond-to(sm) {
+      // responsive code for mobile viewport 640px
+  // }    
+// }
