@@ -1,5 +1,10 @@
-name: leo_spotify
+name: Leo Spotify
 type: module
 description: The objective of this challenge is to implement a mini-site using Drupal 10. The site should contain information about ​​music.
 package: Custom
 core_version_requirement: ^9 || ^10
+dependency: 
+  - drupal:views
+  - drupal:pathauto
+  - drupal:token
+  - jwilsson:spotify-web-api-php
