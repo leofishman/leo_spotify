@@ -1,0 +1,54 @@
+Drupal Challenge Instructions
+Description
+The objective of this challenge is to implement a mini-site using Drupal 10. The site should contain information about ​​music.
+
+Assignment
+You will create an app that shows information about the songs, albums, and artists from Spotify, by receiving data from a third-party API. Use Spotify API to achieve this goal.
+
+https://developer.spotify.com/documentation/web-api/
+
+Create a clean structure architecture in Drupal showcasing your knowledge of site-building to store and relate the different pieces of data you will retrieve and the proper use of Drupal entities. Provide a good, cohesive front-end with proper theming to demonstrate your knowledge of working with Twigs templates, use of CSS and responsiveness, Javascript, hooks and preprocessors, and other Drupal 8/9/10 functionality. Use the Drupal code standards.
+
+Remember to edit and create your own Readme, letting us know how to install and run it, as well as any information you consider necessary.
+
+Mandatory Features
+General
+Navigation menu.
+Homepage ("/" root page)
+The homepage must show a carousel of the top 20 songs.
+Each song must show the title, picture, and link to a detail page.
+The homepage must show a grid with random 10 artists from the site and a link to the artists' general section ("view more" button)
+Each artist must show the title, picture, and a link to a detail page.
+Artists page ("/artists")
+MAX ARTISTS OVERALL ON SITE 50
+
+List of available artists.
+Each artist must show the name, picture, and link to the detail page.
+The list must be sortable by name with ASC as default.
+The list must be filterable by name, song, and genre.
+Songs page ("/songs")
+List of available songs.
+Each song must show the name, picture, artist, and a link to the detail page.
+The list must be sortable by name with ASC as default.
+The list must be filterable by name, song, and artist.
+Artist Detail page
+List of top 10 tracks with link to detail view(name and image).
+List of 10 albums(not singles) with link to Spotify(name and image).
+Spotify's artist link.
+Artist image (1).
+Genres.
+# of followers.
+Name.
+Song Detail page
+Artist name with a link to the detail page.
+Spotify's song link.
+Album's name, image, and release date formatted as "mm/dd/yyyy".
+Name.
+Genres.
+Popularity.
+Bonus (Optional)
+Each detail page URL must use the following convention:
+/artists/<artist_name_slug>
+/songs/<song_name_slug>
+The theme must be enabled automatically as soon as a custom module is enabled.
+Search across the site: song, artist, album.
