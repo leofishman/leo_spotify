@@ -1,0 +1,15 @@
+leo_spotify.example:
+  path: '/leo-spotify/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\leo_spotify\Controller\LeoSpotifyController::build'
+  requirements:
+    _permission: 'access content'
+
+leo_spotify.settings_form:
+  path: '/admin/config/system/leo-spotify'
+  defaults:
+    _title: 'leo_spotify settings'
+    _form: 'Drupal\leo_spotify\Form\SettingsForm'
+  requirements:
+    _permission: 'administer leo_spotify configuration'

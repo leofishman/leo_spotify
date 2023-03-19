@@ -1,0 +1,6 @@
+leo_spotify.settings_form:
+  title: 'leo_spotify'
+  description: 'Configure leo_spotify.'
+  parent: system.admin_config_system
+  route_name: leo_spotify.settings_form
+  weight: 10

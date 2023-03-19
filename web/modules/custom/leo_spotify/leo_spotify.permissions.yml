@@ -1,0 +1,4 @@
+administer leo_spotify configuration:
+  title: 'Administer leo_spotify configuration'
+  description: 'Spotify Configuration.'
+  restrict access: true
