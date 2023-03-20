@@ -1,6 +1,13 @@
 leo_spotify.settings_form:
-  title: 'leo_spotify'
-  description: 'Configure leo_spotify.'
+  title: 'Leo Spotify'
+  description: 'Configure leo spotify.'
   parent: system.admin_config_system
   route_name: leo_spotify.settings_form
-  weight: 10
+  weight: 20
+
+leo_spotify.import_form:
+  title: 'Import Artists, single artist, song or album'
+  description: 'Import or update default data from spotify.'
+  parent: system.admin_config_system
+  route_name: leo_spotify.import_form
+  weight: 30

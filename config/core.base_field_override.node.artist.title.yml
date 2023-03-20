@@ -1,0 +1,20 @@
+uuid: 7f29290c-566a-44b1-a678-0f5f11f849ec
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.artist
+_core:
+  default_config_hash: y8ZOU0bUo_BvlT3aD_wqB_QRtgiOYEJ-nrr-4bD9R3M
+id: node.artist.title
+field_name: title
+entity_type: node
+bundle: artist
+label: Artist
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,22 @@
+uuid: 6a6fdfae-1bb7-4389-a352-3685e22d07ba
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: zqV5bLxikMw9iJrzwlZefDsxvbxNjQTjj19EIG7AdCw
+id: node.field_followers
+field_name: field_followers
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

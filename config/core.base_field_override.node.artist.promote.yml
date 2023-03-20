@@ -1,0 +1,24 @@
+uuid: 0773527f-e8db-4c74-ae9b-0cc2281f6a05
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.artist
+_core:
+  default_config_hash: p6JO0gSMoN_f5MjZRZKLtOViI1hMIL5QL4iSDCiPIxI
+id: node.artist.promote
+field_name: promote
+entity_type: node
+bundle: artist
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

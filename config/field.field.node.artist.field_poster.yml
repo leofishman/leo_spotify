@@ -1,0 +1,40 @@
+uuid: dd1299bd-b989-4b04-bbce-74fab8730856
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_poster
+    - node.type.artist
+  module:
+    - image
+_core:
+  default_config_hash: I5c919dWwni8UYTSWsalj7Gyps0aXW1i0tfrCbFsra0
+id: node.artist.field_poster
+field_name: field_poster
+entity_type: node
+bundle: artist
+label: Poster
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: artists
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

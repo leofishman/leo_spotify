@@ -28,22 +28,19 @@ class SettingsForm extends ConfigFormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $form['example'] = [
+    $form['client_id'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('Example'),
-      '#default_value' => $this->config('leo_spotify.settings')->get('example'),
+      '#title' => $this->t('Spotify Client ID'),
+      '#default_value' => $this->config('leo_spotify.settings')->get('client_id'),
     ];
-    return parent::buildForm($form, $form_state);
-  }
 
-  /**
-   * {@inheritdoc}
-   */
-  public function validateForm(array &$form, FormStateInterface $form_state) {
-    if ($form_state->getValue('example') != 'example') {
-      $form_state->setErrorByName('example', $this->t('The value is not correct.'));
-    }
-    parent::validateForm($form, $form_state);
+    $form['client_secret'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('Spotify Client Secret'),
+      '#default_value' => $this->config('leo_spotify.settings')->get('client_secret'),
+    ];
+
+    return parent::buildForm($form, $form_state);
   }
 
   /**
@@ -51,7 +48,8 @@ class SettingsForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->config('leo_spotify.settings')
-      ->set('example', $form_state->getValue('example'))
+      ->set('client_id', $form_state->getValue('client_id'))
+      ->set('client_secret', $form_state->getValue('client_secret'))
       ->save();
     parent::submitForm($form, $form_state);
   }

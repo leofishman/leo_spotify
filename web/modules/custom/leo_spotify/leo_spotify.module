@@ -1,6 +1,23 @@
 <?php
+use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\Core\Url;
 
 /**
  * @file
  * Primary module hooks for leo_spotify module.
  */
+/**
+ * Implements hook_help().
+ */
+function leo_spotify_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the leo_spotify module.
+    case 'help.page.leo_spotify':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module is a code challenge for jobscity.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

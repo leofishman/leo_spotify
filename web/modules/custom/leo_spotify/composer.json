@@ -2,9 +2,6 @@
     "name": "leofishman/leo_spotify",
     "description": "The objective of this challenge is to implement a mini-site using Drupal 10. The site should contain information about ​​music.",
     "type": "project",
-    "require": {
-        "jwilsson/spotify-web-api-php": "^5.6.0"
-    },
     "license": "MIT",
     "autoload": {
         "psr-4": {

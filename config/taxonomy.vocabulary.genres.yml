@@ -1,0 +1,10 @@
+uuid: ae89650b-2194-44bd-a445-3d061b4f1182
+langcode: und
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: xianVAK59lm8dQsZfBP2nWce-SDEfZyB3KcvThl6gik
+name: Genres
+vid: genres
+description: ''
+weight: 0

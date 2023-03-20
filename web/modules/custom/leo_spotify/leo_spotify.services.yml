@@ -1,0 +1,5 @@
+
+services:
+  leo_spotify.spotifyapi:
+    class: Drupal\leo_spotify\SpotifyApi
+    arguments: ['@http_client', '@config.factory', '@state', '@messenger']

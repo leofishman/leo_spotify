@@ -9,7 +9,15 @@ leo_spotify.example:
 leo_spotify.settings_form:
   path: '/admin/config/system/leo-spotify'
   defaults:
-    _title: 'leo_spotify settings'
+    _title: 'Leo Spotify Settings'
     _form: 'Drupal\leo_spotify\Form\SettingsForm'
   requirements:
-    _permission: 'administer leo_spotify configuration'
+    _permission: 'administer leo spotify configuration'
+
+leo_spotify.import_form:
+  path: '/admin/config/system/leo-spotify/import'
+  defaults:
+    _title: 'Import Artists, single artist, song or album'
+    _form: 'Drupal\leo_spotify\Form\ImportForm'
+  requirements:
+    _permission: 'administer leo spotify configuration'
